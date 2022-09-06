@@ -1,19 +1,20 @@
 # ----------------------------------------------------------------------
-# - Name:       Brandon Schultz
-# - Date:       4-16-22
-# - Assignment: HW1 Blackbox Testing
-# - Description: This file contains T/F unit tests for
-# -  confirming valid credit card sequences.
+# - Name:        Brandon Schultz
+# - Date:        4-16-22
+# - Technique:   Blackbox Testing
+# - Description: This file contains T/F unit tests that
+# -              test for valid credit card sequences.
 # - References:
-#  https://www.geeksforgeeks.org/program-credit-card-number-validation/
+#   https://www.geeksforgeeks.org/program-credit-card-number-validation/
 # ----------------------------------------------------------------------
+
 # Test suite from std library:
 import unittest
 from credit_card_validator import credit_card_validator
 # Class used for tests:
 class testCase(unittest.TestCase):
     # ---------------------------------------
-    # - Tests take the form of example below:                          |
+    # - Tests take the form of example below:
     # ---------------------------------------
     # Generic explanation via comment...
     # def test11(self):
@@ -38,7 +39,7 @@ class testCase(unittest.TestCase):
     def test3(self):
         card_num = '4075407399425858'
         self.assertTrue(credit_card_validator(card_num))
-    # -----------------------------------------------------
+    # -------------------------------------------------
     # - American Express Cases:
     #  ____________________________________________
     # | AE Scope:| Prefix(es): 34,37 | Length: 15  |
@@ -71,5 +72,6 @@ class testCase(unittest.TestCase):
     def test7(self):
         card_num = '2720000000000005'
         self.assertTrue(credit_card_validator(card_num))    
+        
 if __name__ == '__main__':
     unittest.main(verbosity=2)
