@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------
 # - Name:       Brandon Schultz
 # - Date:       4-16-22
-# - Assignment: HW2 Improving Testing Coverage
+# - Technique:  
 # - Description: This file applies white box testing techniques that
 #   achieve 100% Branch and Conditional Coverage in the testing of the
 #   contrived_func function:
